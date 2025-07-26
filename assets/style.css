@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 40px;
+    display: flex;
+}
+
+.logos {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+body {
+    background-color: #18181b;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1000;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+    background-color: #18181b;
+}
+
+.nav-logo img {
+    margin: auto;
+    max-width: 85px;
+    height: auto;
+}
+
+.nav-logo {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #511281;
+    transition: all 0.4s ease;
+}
+
+.link a:hover::after {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #511281;
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 10rem; /* Aumenté a 12rem (o usa px si prefieres) */
+    padding-bottom: 3rem; /* Agregué padding inferior para balance */
+    min-height: 70vh; /* Opcional: cubrir toda la pantalla inicial */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card {
+    background-color: #1c1c1e;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+section .scrolled {
+    background-color: #121214;
+}
+
+section .header {
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+
+.features {
+    display: flex;
+    margin: 100px 0px;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 0;
+}
+
+.card {
+    display: flex;
+    background-color: #18181b;
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.img-card {
+    width: 100rem;
+    margin: 0px;
+}
+
+p {
+    color: #fff;
+}
+
+.contact-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1c1c1e;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 100;
+}
+
+.contact-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-card label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #74CC7E;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-card textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #74CC7E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card button:hover {
+    background-color: #019081;
+}
+
+
+/*Footer*/
+.footer-container {
+    background-color: #1c1c1e;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-logo {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #74CC7E;
+}
+
+
+.footer-column p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer-column i {
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+
+.footer-logo {
+    margin: auto;
+    max-width: 85px;
+    height: auto;
+}
+
+.tech-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.tech-image {
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+.tech-category {
+    margin-bottom: 20px;
+}
+
+.tech-category h3 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-list li {
+    background-color: #1e1e1e;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.95em;
+}
