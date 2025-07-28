@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="./assets/Secundario/1 (1).png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <title>Mateo Rivas | Portafolio</title>
 </head>
 
@@ -17,8 +18,8 @@
             <li class="link"><a href="#">Mateo Rivas</a></li>
             <li class="link"><a href="#">Inicio</a></li>
             <li class="link"><a href="#about">Sobre mí</a></li>
-            <li class="link"><a href="#contact">Tecnologías</a></li>
-            <li class="link"><a href="#contact">Proyectos</a></li>
+            <li class="link"><a href="#tech">Tecnologías</a></li>
+            <li class="link"><a href="#projects">Proyectos</a></li>
             <li class="link"><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
@@ -29,64 +30,227 @@
             <span class="blur"></span>
             <h1>¡Hola! soy Mateo Rivas</h1>
             <p>
-                Me apasiona crear software que funcione bien, crezca con el tiempo y deje huella. Construyo ideas con código y mates🧉 
+                Me apasiona crear software que funcione bien, crezca con el tiempo y deje huella. Construyo ideas con
+                código y mates🧉
             </p>
+            <div class="button-group">
+                <a href="tu_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn"><i
+                        class="fa-regular fa-file"></i> Ver CV</a>
+                <a href="https://github.com/tu_usuario" class="btn" target="_blank"><i class="fa-brands fa-github"></i>
+                    GitHub</a>
+                <a href="https://www.linkedin.com/in/tu_usuario/" class="btn" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
         </div>
     </header>
 
+
     <section class="container-card" id="about">
-        <h2 class="header">Sobre Mí</h2 </div>
+        <h2 class="header">Sobre Mí</h2>
+        <div class="about-glow">
+            <div class="glow-border"></div>
+            <div class="about-content">
+                <p>
+                    Soy estudiante en la Licenciatura en Sistemas en la UNLa, descubrí una pasión clara: construir
+                    soluciones
+                    que funcionen bien, escalen y marquen la diferencia.
+                </p>
+                <p>
+                    Me encantan tanto el desarrollo backend como frontend, disfruto diseñar APIs, conectar sistemas
+                    con
+                    bases de
+                    datos —relacionales y no relacionales— y pensar cada parte como pieza clave de algo más grande.
+                </p>
+                <p>
+                    No me interesa solo que el código ande, sino que sea mantenible, claro y de calidad. Sigo
+                    formándome
+                    día
+                    a día, con ganas de crecer, aprender nuevas tecnologías y aportar en proyectos.
+                </p>
+            </div>
+        </div>
+
     </section>
 
 
-    <section class="container tech-section" id="tech">
-        <div class="image">
-            <img src="assets/Secundario/1 (1).png" alt="Mate Tech" class="tech-image">
-        </div>
 
-        <div class="content">
-            <h2>Mi Stack Tecnológico</h2>
-
+    <section class="tech-section" id="tech">
+        <div class="tech-container">
+            <h2 class="header"> 🚀 Mi Stack Tecnológico</h2>
+            <!-- Frontend -->
             <div class="tech-category">
-                <h3>Frontend</h3>
-                <ul class="tech-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React (si usás)</li>
+                <h3 class="category-title">Frontend</h3>
+                <ul class="tech-grid">
+                    <li class="tech-item">
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <span>HTML5</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <span>CSS3</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Backend -->
+            <div class="tech-category">
+                <h3 class="category-title">Backend</h3>
+                <ul class="tech-grid">
+                    <li class="tech-item">
+                        <i class="devicon-java-plain-wordmark colored"></i>
+                        <span>Java</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-c-original colored"></i>
+                        <span>C</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-mysql-plain-wordmark colored"></i>
+                        <span>MySQL</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-php-plain colored"></i>
+                        <span>PHP</span>
+                    </li>
                 </ul>
             </div>
 
             <div class="tech-category">
-                <h3>Backend</h3>
-                <ul class="tech-list">
-                    <li>Java / Spring Boot</li>
-                    <li>Node.js (si aplicara)</li>
-                    <li>Hibernate / JPA</li>
-                    <li>SQL / MySQL</li>
+                <h3 class="category-title">Frameworks</h3>
+                <ul class="tech-grid">
+                    <li class="tech-item">
+                        <i class="devicon-spring-plain-wordmark colored"></i>
+                        <span>Spring Boot</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-react-original-wordmark colored"></i>
+                        <span>React</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <span>Bootstrap</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-codeigniter-plain colored"></i>
+                        <span>CodeIgniter</span>
+                    </li>
                 </ul>
             </div>
-
+            <!-- Herramientas -->
             <div class="tech-category">
-                <h3>Herramientas</h3>
-                <ul class="tech-list">
-                    <li>Git & GitHub</li>
-                    <li>Postman</li>
-                    <li>VS Code</li>
-                    <li>IntelliJ IDEA</li>
+                <h3 class="category-title">Herramientas</h3>
+                <ul class="tech-grid">
+                    <li class="tech-item">
+                        <i class="devicon-git-plain-wordmark colored"></i>
+                        <span>Git</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-swagger-plain colored"></i>
+                        <span>Swagger</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-postman-plain colored"></i>
+                        <span>Postman</span>
+                    </li>
+                    <li class="tech-item">
+                        <i class="devicon-maven-plain colored"></i>
+                        <span>Maven</span>
+                    </li>
+                    <li class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" />
+                        <span>JUnit5</span>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <!--Proyectos-->
+    <section class="projects-section" id="projects">
+        <h2 class="header">🛠️ Proyectos</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3 class="project-title">Sistema de Turnos</h3>
+                <p class="project-description">
+                    App web para gestión de turnos entre clientes, empleados y servicios. Permite registrar turnos,
+                    validar horarios y manejar roles.
+                </p>
+                <div class="project-tech">
+                    <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+                </div>
+                <a href="https://github.com/materivas/TP-OO2-Grupo-20-Spring" class="btn" target="_blank">
+                    <i class="fa-brands fa-github"></i> Ver Repositorio
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Portfolio Web</h3>
+                <p class="project-description">
+                    Sitio web personal para mostrar experiencia, stack tecnológico y contacto. Diseño moderno con
+                    animaciones suaves y responsive.
+                </p>
+                <div class="project-tech">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <a href="https://github.com/materivas/Portfolio" class="btn" target="_blank">
+                    <i class="fa-brands fa-github"></i> Ver Repositorio
+                </a>
+            </div>
+
+            <!-- Se pueden agregar más .project-card si quiero sumar más proyectos -->
+
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-container">
+            <h2 id="contact-heading" class="section-title">📩 Contacto</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Nombre</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Mensaje</label>
+                </div>
+
+                <button type="submit" class="btn">
+                    <span>Enviar</span>
+                    <i class="devicon-send-plain"></i>
+                </button>
+            </form>
+
+            <!-- Mensaje de éxito (oculto inicialmente) -->
+            <div id="success-message" class="success-message" hidden>
+                <i class="devicon-check-plain"></i>
+                <p>¡Mensaje enviado con éxito!</p>
+            </div>
+
+        </div>
+    </section>
 
 
     <footer class="footer-container">
         <div class="footer-content">
             <div class="footer-column social-links">
-                <a href="https://www.linkedin.com/in/mateo-rivas-dev/" class="social-icon"><i
+                <a href="https://www.linkedin.com/in/mateo-rivas-dev/" class="social-icon" target="_blank"><i
                         class="fa-brands fa-linkedin"></i>
-                    <a href="https://github.com/materivas" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/materivas" class="social-icon" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
             </div>
 
             <div class="footer-column">
@@ -94,16 +258,15 @@
                 <p><i class="fa-solid fa-envelope"></i> matiensoriv@gmail.com</p>
             </div>
         </div>
-
         <div class="footer-bottom">
-            <p>Copyright ©
-                <script>document.write(new Date().getFullYear());</script> All Rights Reserved.
+            <p>©
+                <script>document.write(new Date().getFullYear());</script> Mateo Rivas. Todos los derechos reservados.
             </p>
         </div>
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
