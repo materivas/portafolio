@@ -642,6 +642,9 @@ p {
 
 
 @media (max-width: 768px) {
+    *{
+        color: #fff;
+    }
     nav {
         justify-content: space-between;
         padding: 1.5rem;
