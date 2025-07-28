@@ -22,6 +22,7 @@ body {
     background-color: #18181b;
 }
 
+/* General nav (ya lo tenías, mantenemos esto) */
 nav {
     position: fixed;
     width: 100%;
@@ -31,7 +32,7 @@ nav {
     z-index: 1000;
     padding: 2rem 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #1c1c1e;
     transition: background-color 0.3s ease;
@@ -39,6 +40,12 @@ nav {
 
 nav.scrolled {
     background-color: #18181b;
+}
+
+.brand {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
 }
 
 .nav-links .link a {
@@ -591,6 +598,7 @@ p {
     margin-bottom: 1.5rem;
     border-left: 4px solid var(--color-primary);
     padding-left: 15px;
+    font-weight: normal;
 }
 
 /* GRID DE TECNOLOGÍAS */
@@ -632,23 +640,64 @@ p {
     text-align: center;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
-    .tech-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    nav {
+        justify-content: space-between;
+        padding: 1.5rem;
     }
 
-    .tech-item i {
-        font-size: 2.5rem;
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh; /* que ocupe toda la pantalla */
+        background-color: #1c1c1e;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+        transition: left 0.3s ease;
+        z-index: 999;
     }
-}
 
-.tech-section h3,
-.tech-section span {
-    color: #fff;
-}
+    .nav-links.active {
+        left: 0;
+    }
 
-.tech-item img {
-    padding: 50px;
-    margin: auto;
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 1001; /* para que quede encima del menú */
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: white;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    body.menu-open {
+        overflow: hidden; /* Evita el scroll cuando el menú está abierto */
+    }
 }

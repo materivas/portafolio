@@ -49,3 +49,19 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
         btn.innerHTML = '<span>Enviar</span><i class="devicon-send-plain"></i>';
     });
 });
+
+const toggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+toggle.addEventListener('click', () => {
+    toggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Opcional: cerrar el menú al hacer clic en un link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        toggle.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
